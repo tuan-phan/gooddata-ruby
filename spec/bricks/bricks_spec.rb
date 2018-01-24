@@ -15,7 +15,7 @@ describe GoodData::Bricks do
 
   it "should be possible to use block as an app in pipeline" do
     p = GoodData::Bricks::Pipeline.prepare([
-      lambda do |_params|
+      lambda do |_params |
         puts "x"
       end
     ])
